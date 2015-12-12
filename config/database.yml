@@ -1,0 +1,25 @@
+defaults: &defaults
+  adapter: postgresql
+  encoding: unicode
+  username: bb
+  password: postgres
+  host: localhost
+  port: 5432
+  pool: 25
+  reaping_frequency: 10
+
+development:
+  <<: *defaults
+  database: syaleenandkeerthi
+
+staging:
+  <<: *defaults
+  database: syaleenandkeerthi
+
+production:
+  <<: *defaults
+  database: syaleenandkeerthi
+
+test:
+  <<: *defaults
+  database: syaleenandkeerthi
