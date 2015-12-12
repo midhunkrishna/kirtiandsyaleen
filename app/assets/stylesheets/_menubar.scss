@@ -13,11 +13,21 @@
         border-bottom-width: 4px;
         &.navbar-fixed-top {
             min-height: 64px;
+            .navbar-toggle{
+                border-color: rgba(255, 255, 255, 0.1);
+                margin-top: 13px;
+            }
             .navbar-brand{
                 font-family: $curly-font;
                 font-size: 30px;
                 font-weight: bold;
                 padding-top: 24px;
+                .glyphicon{
+                    line-height: 0.5;
+                    font-size: 22px;
+                    margin-left: 3px;
+                    margin-right: 0px;
+                }
             }
             @media (max-width: 767px) {
                 .navbar-nav {
@@ -36,6 +46,8 @@
                         padding-top: 0px;
                         padding-bottom: 0px;
                         line-height: 64px;
+                        text-transform: uppercase;
+                        font-family: $block-font;
                     }
                 }
             }
