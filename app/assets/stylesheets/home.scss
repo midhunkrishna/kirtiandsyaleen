@@ -1,3 +1,93 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "variables";
+
+.container{
+    .header{
+        h2{
+            font-family: $curly-font;
+            font-size: 7em;
+            font-weight: bold;
+            color: $gold;
+            text-shadow: 1px 1px 0px #444;
+        }
+        @media (max-width: 768px) {
+            h2{
+                font-size: 4em;
+            }
+        }
+        h4{
+            font-family: $block-font;
+            color: $gold;
+            text-transform: uppercase;
+        }
+        position: relative;
+        z-index: 100;
+    }
+    .halo-ring{
+        @media (max-width: 3840px) {
+            width: 500px;
+            height: 500px;
+            margin-top: 35px;
+        }
+        
+        @media (max-width: 1200px){
+            width: 500px;
+            height: 500px;
+            margin-top: 30px;
+        }
+        
+        @media (max-width: 992px) {
+            width: 450px;
+            height: 450px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 768px) {
+            width: 330px;
+            height: 330px;
+            margin-top: 15px;
+        }
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+        box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.5);
+        
+        .image-halo{
+            position: relative;
+            @media (max-width: 3840px) {
+                width: 280px;
+                height: 280px;
+                top: 110px;
+                border: 4px solid $gold;
+                background-position: 35% 31%;
+                background-size: 360px 360px;
+            }
+            
+            @media (max-width: 1200px){
+                width: 260px;
+                height: 260px;
+                top: 118px;
+                border: 3px solid $gold;           
+            }
+            
+            @media (max-width: 992px) {
+                width: 244px;
+                height: 244px;
+                top: 104px;
+                border: 2px solid $gold;
+            }
+
+            @media (max-width: 768px) {
+                width: 180px;
+                height: 180px;
+                top: 75px;
+                border: 2px solid $gold;
+                background-size: 200px 200px;
+                background-position: 10% 4%;
+            }
+            border-radius: 50%;
+            background-image: url(frontdemo.jpg);
+        }
+    }
+}

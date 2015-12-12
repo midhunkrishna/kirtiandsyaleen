@@ -1,0 +1,45 @@
+@import "variables";
+.hover-highlight{
+    &:hover{
+        color: $gold;
+    }
+}
+
+#mainNav{
+    &.gold{
+        position: relative;
+        background-color: white;
+        border-color: $gold;
+        border-bottom-width: 4px;
+        &.navbar-fixed-top {
+            min-height: 64px;
+            .navbar-brand{
+                font-family: $curly-font;
+                font-size: 30px;
+                font-weight: bold;
+                padding-top: 24px;
+            }
+            @media (max-width: 767px) {
+                .navbar-nav {
+                    li {
+                        a {
+                            line-height: 20px;
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                        }
+                    }
+                }
+            }
+            .navbar-nav{
+                li {
+                    a {
+                        padding-top: 0px;
+                        padding-bottom: 0px;
+                        line-height: 64px;
+                    }
+                }
+            }
+            
+        }
+    }
+}

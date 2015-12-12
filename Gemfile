@@ -11,6 +11,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'sass-rails', '~> 5.0'
 gem 'friendly_id'
+gem 'slim-rails'
 
 group :development, :test do
   gem 'pry-byebug'
@@ -18,4 +19,3 @@ group :development, :test do
   gem 'binding_of_caller'
   gem 'spring'
 end
-
