@@ -16,8 +16,10 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
 @import url(https://fonts.googleapis.com/css?family=Tangerine:400,700);
 @import "bootstrap-sprockets";
-@import "bootstrap";            
+@import "bootstrap";
+@import "variables";            
 @import "menubar";
+@import "footer";
 
 body{
     &.gold{
@@ -26,4 +28,25 @@ body{
         background-size: cover;
         background-position-y: 15px;
     }
+}
+
+#quotes{
+    margin-top: 90px;
+    background: $transparent-gold;
+    border-top: 4px solid $gold;
+    .container{
+        margin-top: 40px;
+        h4{
+            text-transform: uppercase;
+            font-family: $block-font;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.8;
+            font-style: italic;
+            font-size: 1.5em;
+        }
+        h5{
+            font-family: $block-font;
+        }
+    }
+    
 }
