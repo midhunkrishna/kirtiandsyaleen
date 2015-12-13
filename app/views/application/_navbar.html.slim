@@ -13,7 +13,7 @@ nav#mainNav class="navbar navbar-default navbar-fixed-top affix-top gold"
     #bs-example-navbar-collapse-1.collapse.navbar-collapse
       ul.nav.navbar-nav.navbar-right
         li
-          a.page-scroll id="locate-us" href="locations" Location
+          = link_to 'Location', location_path(Location.default), class: "page-scroll", 'data-no-turbolink' => true
         li
           a.page-scroll href="#stories-about-us" Stories
         li

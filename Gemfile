@@ -17,6 +17,7 @@ gem 'underscore-rails'
 gem 'geocoder'
 gem 'devise'
 gem 'activeadmin', '~> 1.0.0.pre2'
+gem 'browser'
 
 group :development, :test do
   gem 'pry-byebug'
