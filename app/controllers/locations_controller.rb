@@ -1,6 +1,7 @@
 class LocationsController < ApplicationController
   layout 'locations_layout'
   
-  def index
+  def show
+    @location = Location.find(params[:id])
   end
 end

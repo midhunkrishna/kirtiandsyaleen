@@ -1,0 +1,9 @@
+div class="locations"
+  div id="map-holder"
+    div class="row floating"
+      = render :partial => 'header_hero'
+    div id="latitude" class="hidden"
+      = @location.latitude
+    div id="longitude" class="hidden"
+      = @location.longitude
+    div class="map" id="map"
