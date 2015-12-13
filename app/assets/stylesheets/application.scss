@@ -34,8 +34,25 @@ body{
     margin-top: 90px;
     background: $transparent-gold;
     border-top: 4px solid $gold;
-    .container{
+    @media (max-width: 3840px) {
+        margin-top: 90px;
+    }
+    
+    @media (max-width: 1200px){
+        margin-top: 80px;
+
+    }
+
+    @media (max-width: 992px) {
+        margin-top: 60px;
+
+    }
+
+    @media (max-width: 768px) {
         margin-top: 40px;
+
+    }
+    .container{
         h4{
             text-transform: uppercase;
             font-family: $block-font;
@@ -43,10 +60,44 @@ body{
             line-height: 1.8;
             font-style: italic;
             font-size: 1.5em;
+            margin-top: 20px;
+            @media (max-width: 3840px) {
+                line-height: 1.8;
+                font-size: 1.5em;
+            }
+            
+            @media (max-width: 1200px){
+                line-height: 1.8;
+                font-size: 1.5em;
+            }
+            
+            @media (max-width: 992px) {
+                line-height: 1.8;
+                font-size: 1.5em;
+            }
+
+            @media (max-width: 768px) {
+                line-height: 1.8;
+                font-size: 0.7em;
+            }
         }
         h5{
             font-family: $block-font;
+            @media (max-width: 3840px) {
+                font-size: 1.5em;
+            }
+            
+            @media (max-width: 1200px){
+                font-size: 1.2em;
+            }
+            
+            @media (max-width: 992px) {
+                font-size: 1.0em;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 0.7em;
+            }
         }
-    }
-    
+    }   
 }
