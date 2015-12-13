@@ -1,0 +1,22 @@
+@import 'variables';
+.header-hero{
+    h2{
+        font-family: $curly-font;
+        font-size: 7em;
+        font-weight: bold;
+        color: $gold;
+        text-shadow: 1px 1px 0px #444;
+    }
+    @media (max-width: 768px) {
+        h2{
+            font-size: 4em;
+        }
+    }
+    h4{
+        font-family: $block-font;
+        color: $gold;
+        text-transform: uppercase;
+    }
+    position: relative;
+    z-index: 100;
+}

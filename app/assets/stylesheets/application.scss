@@ -27,6 +27,10 @@ body{
         background-repeat: repeat-y;
         background-size: cover;
         background-position-y: 15px;
+        .wrapper{
+            min-height: 100%;
+            height: auto !important;
+        }
     }
 }
 

@@ -12,6 +12,11 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'sass-rails', '~> 5.0'
 gem 'friendly_id'
 gem 'slim-rails'
+gem 'gmaps4rails'
+gem 'underscore-rails'
+gem 'geocoder'
+gem 'devise'
+gem 'activeadmin', '~> 1.0.0.pre2'
 
 group :development, :test do
   gem 'pry-byebug'

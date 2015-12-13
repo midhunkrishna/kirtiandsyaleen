@@ -1,0 +1,21 @@
+// Place all the styles related to the locations controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.locations{
+    #map-holder{
+        min-height:584px;
+        height:584px;
+        .row{
+            &.floating{
+                position: relative;
+                z-index: 1000;
+            }
+        }
+        .map{
+            position: absolute;
+            top: 68px;
+            height: 606px;
+            width: 100%;
+        }
+    }
+}
