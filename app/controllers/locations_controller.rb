@@ -7,11 +7,11 @@ class LocationsController < ApplicationController
 
   def gmap
     if browser.android?
-      redirect_to "http://maps.google.com/maps?q=#{latitude},#{longitude}"
+      redirect_to "http://maps.google.com/?q=#{address}&sll=#{lat_long}"
     elsif browser.ios?
-      redirect_to "http://maps.apple.com/?q=#{latitude},#{longitude}"
+      redirect_to "http://maps.apple.com/?q=#{map_search_string}"
     else
-      redirect_to "http://maps.google.com/maps?q=#{latitude},#{longitude}"
+      redirect_to "http://maps.google.com/?q=#{address}&sll=#{lat_long}"
     end
   end
 
@@ -27,5 +27,20 @@ class LocationsController < ApplicationController
 
   def latitude
     location.latitude
+  end
+
+  def map_search_string
+    if location.address.present?
+      return address
+    end
+    lat_long
+  end
+
+  def address
+    URI.encode(location.address)
+  end
+
+  def lat_long
+    "#{latitude},#{longitude}"
   end
 end
