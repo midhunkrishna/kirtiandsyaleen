@@ -25,46 +25,49 @@
 .locations{
     .container{
         .location-items{
-            a{
-                li{
-                    display: inline-block;
-                    padding-left: 0px;
-                    padding-right: 0px;
-                    padding-top: 15px;
-                    padding-bottom: 15px;
-                    text-align: center;
-                    margin-top: 25px;
-                    margin-bottom: 19px;
-                    background: $gold;
-                    &.selected{
-                        background: #6D97A1;
-                    }
-                    @media (max-width: 3840px) {
-                    }
-                    
-                    @media (max-width: 1200px){
-                    }
-                    
-                    @media (max-width: 992px) {
-                        font-size: 0.8em;
-                        padding-top: 8px;
-                        padding-bottom: 8px;
-                    }
+            .list-inline{
+                margin: 0 !important;
+                a{
+                    li{
+                        display: inline-block;
+                        padding-left: 0px;
+                        padding-right: 0px;
+                        padding-top: 15px;
+                        padding-bottom: 15px;
+                        text-align: center;
+                        margin-top: 25px;
+                        margin-bottom: 19px;
+                        background: $gold;
+                        &.selected{
+                            background: #6D97A1;
+                        }
+                        @media (max-width: 3840px) {
+                        }
+                        
+                        @media (max-width: 1200px){
+                        }
+                        
+                        @media (max-width: 992px) {
+                            font-size: 0.8em;
+                            padding-top: 8px;
+                            padding-bottom: 8px;
+                        }
 
-                    @media (max-width: 768px) {
-                        font-size: 0.5em;
-                        padding-top: 5px;
-                        padding-bottom: 5px;
+                        @media (max-width: 768px) {
+                            font-size: 0.5em;
+                            padding-top: 5px;
+                            padding-bottom: 5px;
+                        }
                     }
-                }
-                &:hover{
-                    li{
-                        background: #6D97A1;
+                    &:hover{
+                        li{
+                            background: #6D97A1;
+                        }
                     }
-                }
-                &:active{
-                    li{
-                        background: #6D97A1;
+                    &:active{
+                        li{
+                            background: #6D97A1;
+                        }
                     }
                 }
             }
