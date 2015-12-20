@@ -1,12 +1,12 @@
 footer{
-    position: relative;
+    position: absolute;
     bottom: 0;
     width: 100%;
     clear: both;
     overflow: hidden;
-    min-height: 40px;
+    min-height: 2px;
     #footer-content{
         background-color: #202121;
-        min-height: 40px;
+        min-height: 2px;
     }
 }
