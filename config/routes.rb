@@ -11,6 +11,8 @@ Rails.application.routes.draw do
       get :gmap
     end
   end
+
+  resource :invitations, only: [:new, :create, :show]
   
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
