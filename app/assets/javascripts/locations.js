@@ -4,25 +4,27 @@ var styles = [{"elementType":"geometry","stylers":[{"hue":"#ff4400"},{"saturatio
 
 $(function(){
   console.log("Hi, welcome to Syaleen and Kirthi's wedding website");
-  var lat = parseFloat($("#latitude").text());
-  var long = parseFloat($("#longitude").text());
-  handler = Gmaps.build('Google');
-  
-  handler.buildMap({ provider: {styles: styles}, internal: {id: 'map'}}, function(){
-    markers = handler.addMarkers([
-      {
-        "lat": lat,
-        "lng": long,
-        "picture": {
-          "url": "http://i.imgur.com/YLjr8Mo.png",
-          "width":  32,
-          "height": 32
-        },
-        "infowindow": "hello!"
-      }
-    ]);
-    handler.bounds.extendWith(markers);
-    handler.fitMapToBounds();
-    handler.getMap().setZoom(12);
-  });
+  if($("#map").length > 0){
+    var lat = parseFloat($("#latitude").text());
+    var long = parseFloat($("#longitude").text());
+    handler = Gmaps.build('Google');
+    
+    handler.buildMap({ provider: {styles: styles}, internal: {id: 'map'}}, function(){
+      markers = handler.addMarkers([
+        {
+          "lat": lat,
+          "lng": long,
+          "picture": {
+            "url": "http://i.imgur.com/YLjr8Mo.png",
+            "width":  32,
+            "height": 32
+          },
+          "infowindow": "hello!"
+        }
+      ]);
+      handler.bounds.extendWith(markers);
+      handler.fitMapToBounds();
+      handler.getMap().setZoom(12);
+    });
+  }  
 });
