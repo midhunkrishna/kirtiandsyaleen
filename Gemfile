@@ -8,7 +8,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
-gem 'bootstrap-sass', '~> 3.3.6'
+gem "therubyracer"
 gem 'sass-rails', '~> 5.0'
 gem 'friendly_id'
 gem 'slim-rails'
@@ -20,6 +20,9 @@ gem 'activeadmin', '~> 1.0.0.pre2'
 gem 'browser'
 gem 'carrierwave'
 gem 'fog-aws'
+gem 'less-rails', '~> 2.7.0'
+gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
+
 
 group :development, :test do
   gem 'pry-byebug'
