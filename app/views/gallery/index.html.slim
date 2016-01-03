@@ -2,6 +2,8 @@ div class="container"
   div class="row"
     div id="gallery" class="col-xs-12 text-center" 
       = render :partial => 'header_hero'
+      div id="img-holder"
+        img src="#{random(Photo).photo.url}"
       div id="play-button"
         i class="glyphicon glyphicon-play"
       h3 class=""
