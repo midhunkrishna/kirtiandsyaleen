@@ -18,6 +18,8 @@ gem 'geocoder'
 gem 'devise'
 gem 'activeadmin', '~> 1.0.0.pre2'
 gem 'browser'
+gem 'carrierwave'
+gem 'fog-aws'
 
 group :development, :test do
   gem 'pry-byebug'

@@ -6,6 +6,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'home#index'
+  get 'gallery', to: 'gallery#index'
   resources :locations, only: [:show] do
     member do
       get :gmap

@@ -1,0 +1,30 @@
+@import "variables";
+#gallery{
+    height: 200px;
+    h3{
+        font-family: $block-font;
+        text-transform: uppercase;
+        color: $grey;
+        font-size: 38px;
+        margin-top: 26px;
+    }
+    #play-button{
+        margin: 0 auto;
+        border: 1px solid;
+
+        height: 100px;
+        margin-top: 200px;
+        width: 100px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+        &:hover{
+           transform: scale(1.1); 
+        }
+        i{
+            font-size: 40px;
+            margin-top: 28px;
+            margin-left: 6px;
+        }
+    }
+}
