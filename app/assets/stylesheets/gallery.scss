@@ -16,9 +16,16 @@
         box-shadow: 1px 1px 3px #444;
         margin: 0 auto;
         margin-top: 190px;
+        @media(max-width: 420px) {
+            width: 300px;
+        }
         img{
             width: 400px;
             height: 297px;
+            @media(max-width: 420px) {
+                width: 280px;
+                height: auto;
+            }
         }
         #play-button{
             margin: 0 auto;
