@@ -13,5 +13,10 @@ ActiveAdmin.register Photo do
 #   permitted
 # end
 
+ show do
+   panel "" do
+     img src: photo.photo.url
+   end
+ end
 
 end
