@@ -36,8 +36,8 @@
             cursor: pointer;
             transition: all .3s ease-in-out;
             position: absolute;
-            top: 108px;
-            left: 150px;
+            top: calc(50% - 50px);
+            left: calc(50% - 50px);
             &:hover{
                 transform: scale(1.1); 
             }
