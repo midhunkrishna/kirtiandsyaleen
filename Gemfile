@@ -22,7 +22,7 @@ gem 'carrierwave'
 gem 'fog-aws'
 gem 'less-rails', '~> 2.7.0'
 gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
-
+gem "mini_magick"
 
 group :development, :test do
   gem 'pry-byebug'

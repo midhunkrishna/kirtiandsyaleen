@@ -4,8 +4,20 @@ div class="container"
       = render :partial => 'header_hero'
       div id="img-holder"
         img src="#{random(Photo).photo.url}"
-      div id="play-button"
-        i class="glyphicon glyphicon-play"
+        div id="play-button"
+          i class="glyphicon glyphicon-play"
       h3 class=""
         | Our Photos
       
+div id="gallery-items" class="hidden"
+  - Photo.all.each do |photo|
+    div class="element"
+      div class="thumb"
+        = photo.photo.url(:thumb)
+      div class="full"
+        = photo.photo.url
+      div class="text-content"
+        h4
+          = photo.title
+        p
+          = photo.description

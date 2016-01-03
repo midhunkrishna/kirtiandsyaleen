@@ -8,23 +8,38 @@
         font-size: 38px;
         margin-top: 26px;
     }
-    #play-button{
+    #img-holder{
+        position: relative;
+        width: 420px;
+        margin-top: 225px;
+        border: 10px solid rgba(255, 255, 255, 0.7);
+        box-shadow: 1px 1px 3px #444;
         margin: 0 auto;
-        border: 1px solid;
-
-        height: 100px;
-        margin-top: 200px;
-        width: 100px;
-        border-radius: 50%;
-        cursor: pointer;
-        transition: all .3s ease-in-out;
-        &:hover{
-           transform: scale(1.1); 
+        margin-top: 190px;
+        img{
+            width: 400px;
+            height: 297px;
         }
-        i{
-            font-size: 40px;
-            margin-top: 28px;
-            margin-left: 6px;
+        #play-button{
+            margin: 0 auto;
+            border: 1px solid white;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all .3s ease-in-out;
+            position: absolute;
+            top: 108px;
+            left: 150px;
+            &:hover{
+                transform: scale(1.1); 
+            }
+            i{
+                font-size: 40px;
+                margin-top: 28px;
+                margin-left: 6px;
+                color: white;
+            }
         }
     }
 }

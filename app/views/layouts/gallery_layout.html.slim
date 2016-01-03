@@ -4,7 +4,10 @@ html
     title KirtiandSyaleen |  Gallery
     meta content="width=device-width, initial-scale=1.0" name="viewport"
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = stylesheet_link_tag 'https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.11/css/lightgallery.min.css', media: 'all'
+    
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = javascript_include_tag 'https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.11/js/lightgallery-all.min.js'
     = csrf_meta_tags
   body class="gold"
     javascript:
