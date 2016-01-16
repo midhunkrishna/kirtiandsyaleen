@@ -1,7 +1,7 @@
 nav#mainNav class="navbar navbar-default navbar-fixed-top affix-top gold"
   .container-fluid
     .navbar-header
-      button.navbar-toggle.collapsed data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button" 
+      button.navbar-toggle.collapsed data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button"
         span.sr-only Toggle navigation
         span.icon-bar
         span.icon-bar
@@ -14,9 +14,9 @@ nav#mainNav class="navbar navbar-default navbar-fixed-top affix-top gold"
       ul.nav.navbar-nav.navbar-right
         li
           - if Location.default
-            = link_to 'Location', location_path(Location.default), class: "page-scroll", 'data-no-turbolink' => true
+            = link_to 'Location', location_path(Location.default), class: "page-scroll"
           - else
-            = link_to 'Location','#', class: "page-scroll", 'data-no-turbolink' => true
+            = link_to 'Location','#', class: "page-scroll"
         / li
         /   a.page-scroll href="#stories-about-us" Stories
         / li

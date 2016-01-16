@@ -23,6 +23,7 @@ gem 'fog-aws'
 gem 'less-rails', '~> 2.7.0'
 gem 'twitter-bootstrap-rails'
 gem "mini_magick"
+gem 'jquery-turbolinks'
 
 group :development, :test do
   gem 'pry-byebug'
