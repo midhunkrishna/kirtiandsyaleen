@@ -24,6 +24,7 @@ gem 'less-rails', '~> 2.7.0'
 gem 'twitter-bootstrap-rails'
 gem "mini_magick"
 gem 'jquery-turbolinks'
+gem 'puma'
 
 group :development, :test do
   gem 'pry-byebug'
