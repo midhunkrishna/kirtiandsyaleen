@@ -14,9 +14,9 @@ nav#mainNav class="navbar navbar-default navbar-fixed-top affix-top gold"
       ul.nav.navbar-nav.navbar-right
         li
           - if Location.default
-            = link_to 'Location', location_path(Location.default), class: "page-scroll"
+            = link_to 'Location', location_path(Location.default), class: "page-scroll", 'data-no-turbolink' => true
           - else
-            = link_to 'Location','#', class: "page-scroll"
+            = link_to 'Location','#', class: "page-scroll", 'data-no-turbolink' => true
         / li
         /   a.page-scroll href="#stories-about-us" Stories
         / li
